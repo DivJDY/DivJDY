@@ -15,9 +15,9 @@ const GalleryReact = () => {
 
   return (
     <>
-      <h1 className="mt-5 text-center main-heading">Live Spaces</h1>
-      <div className="d-flex  m-2">
-        <p className=" m-3 text-justify">
+      <h1 className="mt-2 ml-3 main-heading">Live Spaces</h1>
+      <div className="d-flex  ml-3">
+        <p className="  text-justify">
           Collection guides can provide valuable overviews of pictorial holdings
           in libraries, archives, and museums. In addition to summarizing each
           collection at a repository, guides can outline relationships among
@@ -31,7 +31,7 @@ const GalleryReact = () => {
       </div>
       <hr />
 
-      <div className="menu-tabs container pt-3">
+      <div className="menu-tabs container pt-2">
         <div className="menu-tab d-flex justify-content-around">
           <button
             className="btn btn-warning"
@@ -67,7 +67,7 @@ const GalleryReact = () => {
       <div className="menu-items container-fluid mt-2">
         <div className="row">
           <div className="col-11 mx-auto">
-            <div className="row my-5">
+            <div className="row my-1">
               {items.map((elem) => {
                 const { id, name, image, description, category } = elem;
 
@@ -89,13 +89,13 @@ const GalleryReact = () => {
                           <div className="price-book-divide d-flex justify-content-between ">
                             <h2> Category : {category}</h2>
 
-                            <a href="photos">
+                            {/* <a href="photos">
                               <button className="btn btn-primary">
                                 Purchase
                               </button>
-                            </a>
+                            </a> */}
                           </div>
-                          <p>* Prices may vary on selected date.</p>
+                          {/* <p>* Prices may vary on selected date.</p> */}
                         </div>
                       </div>
                     </div>
